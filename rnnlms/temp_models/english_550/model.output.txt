@@ -1,0 +1,56 @@
+
+iter: 0
+valid log probability: -19426.289177
+PPL net: 248.344624
+
+iter: 1
+valid log probability: -18281.445255
+PPL net: 179.435218
+
+iter: 2
+valid log probability: -17334.291085
+PPL net: 137.130373
+
+iter: 3
+valid log probability: -16709.829403
+PPL net: 114.853484
+
+iter: 4
+valid log probability: -16314.068801
+PPL net: 102.648145
+
+iter: 5
+valid log probability: -16043.153416
+PPL net: 95.049562
+
+iter: 6
+valid log probability: -15854.609558
+PPL net: 90.095825
+
+iter: 7
+valid log probability: -15731.485546
+PPL net: 87.001109
+
+iter: 8
+valid log probability: -15665.978416
+PPL net: 85.398148
+
+iter: 9
+valid log probability: -15640.563736
+PPL net: 84.784233
+
+iter: 10
+valid log probability: -15483.225310
+PPL net: 81.080598
+
+iter: 11
+valid log probability: -15383.701900
+PPL net: 78.821875
+
+iter: 12
+valid log probability: -15320.384036
+PPL net: 77.417714
+
+iter: 13
+valid log probability: -15276.070368
+PPL net: 76.449903

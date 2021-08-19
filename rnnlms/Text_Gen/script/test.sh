@@ -1,10 +1,10 @@
 #!/bin/bash
 
 rnnpath=/home/snlp-project-21/rnnlm/
-trainfile=../data/english/s3.txt
-# validfile=../data/english/test.txt
-testfile=../data/english/s3_test.txt
-rnnmodel=../models/english/model_s3
+trainfile=../data/bengali/s2.txt
+# validfile=../data/bengali/test.txt
+testfile=../data/bengali/s2_test.txt
+rnnmodel=../models/bengali/model_s2
 temp=../temp
 
 if [ ! -e $rnnmodel ]; then
@@ -37,22 +37,26 @@ fi
 
 echo "Generating data..."
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10 -debug 0 > $temp/generated_s3_10.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10 -debug 0 > $temp/generated_s2_10.txt
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 100 -debug 0 > $temp/generated_s3_100.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 100 -debug 0 > $temp/generated_s2_100.txt
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 1000 -debug 0 > $temp/generated_s3_1000.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 1000 -debug 0 > $temp/generated_s2_1000.txt
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10000 -debug 0 > $temp/generated_s3_10000.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10000 -debug 0 > $temp/generated_s2_10000.txt
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 100000 -debug 0 > $temp/generated_s3_100000.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 100000 -debug 0 > $temp/generated_s2_100000.txt
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 1000000 -debug 0 > $temp/generated_s3_1000000.txt
+echo "Generating data..."
 
-$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10000000 -debug 0 > $temp/generated_s3_10000000.txt
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 1000000 -debug 0 > $temp/generated_s2_1000000.txt
+
+echo "Generating data..."
+
+$rnnpath/rnnlm -rnnlm $rnnmodel -gen 10000000 -debug 0 > $temp/generated_s2_10000000.txt
 
 # #now we build ngram model based on the sampled data
-# ngram-count -text $temp/s3.txt -order 5 -unk -lm $temp/genlm
+# ngram-count -text $temp/s2.txt -order 5 -unk -lm $temp/genlm
 
 # echo "Perplexity of the rnn model approximated by 5-gram model:"
 # ngram -lm $temp/genlm -order 5 -unk -ppl $testfile

@@ -11,6 +11,8 @@ if aug == "yes":
 
 	for k in k_vals:
 
+		print("OOV for {}, Subwords granularity 1, k {} = ".format(language,k) ,augment(language, "../Text_Gen/s1_{}/s1_{}.txt".format(language,k)))
+
 		print("OOV for {}, Subwords granularity 2, k {} = ".format(language,k) ,augment(language, "../Text_Gen/s2_{}/s2_{}.txt".format(language,k)))
 
 		print("OOV for {}, Subwords granularity 3, k {} = ".format(language,k) ,augment(language, "../Text_Gen/s3_{}/s3_{}.txt".format(language,k)))

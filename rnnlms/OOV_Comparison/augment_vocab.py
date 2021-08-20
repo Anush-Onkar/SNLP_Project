@@ -1,5 +1,6 @@
 from oov import calculate_oov
 
+# Augment the train data and pass the data to calculate_oov function
 def augment(language,aug_file):
 
 	train_file = "../../preprocessed/{}/train.txt".format(language)
